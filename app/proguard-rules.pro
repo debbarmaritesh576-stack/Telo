@@ -1,0 +1,6 @@
+-keep class com.telo.app.** { *; }
+-keep class androidx.room.** { *; }
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-dontwarn okhttp3.**
+-dontwarn com.google.mlkit.**
