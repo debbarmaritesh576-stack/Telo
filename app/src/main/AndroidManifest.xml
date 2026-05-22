@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".TeloApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Telo">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Telo.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.IntroActivity"
+            android:exported="false" />
+        <activity android:name=".ui.UnlockActivity"
+            android:exported="false" />
+        <activity android:name=".ui.HomeActivity"
+            android:exported="false" />
+        <activity android:name=".ui.EditOTPActivity"
+            android:exported="false" />
+        <activity android:name=".ui.EditPasswordActivity"
+            android:exported="false" />
+        <activity android:name=".ui.ScanQRActivity"
+            android:exported="false" />
+        <activity android:name=".ui.SettingsActivity"
+            android:exported="false" />
+        <activity android:name=".ui.BackupActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".autofill.TeloAutofillService"
+            android:exported="true"
+            android:permission="android.permission.BIND_AUTOFILL_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.autofill.AutofillService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.autofill"
+                android:resource="@xml/autofill_hints" />
+        </service>
+
+        <service
+            android:name=".services.BackupService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".receivers.ClipboardClearReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
