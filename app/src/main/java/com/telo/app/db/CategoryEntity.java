@@ -11,7 +11,7 @@ public class CategoryEntity {
     @NonNull
     public String id;
     public String name;
-    public String emoji;
+    public String iconRes;    // drawable resource name — ic_category_home etc
     public String colorHex;
     public int    sortOrder;
     public long   createdAt;
@@ -19,13 +19,13 @@ public class CategoryEntity {
     public static CategoryEntity create(
             String id,
             String name,
-            String emoji,
+            String iconRes,
             String colorHex,
             int sortOrder) {
         CategoryEntity entity = new CategoryEntity();
         entity.id        = id;
         entity.name      = name;
-        entity.emoji     = emoji;
+        entity.iconRes   = iconRes;
         entity.colorHex  = colorHex;
         entity.sortOrder = sortOrder;
         entity.createdAt = System.currentTimeMillis();
