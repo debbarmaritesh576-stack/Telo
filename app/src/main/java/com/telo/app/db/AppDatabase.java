@@ -15,8 +15,8 @@ import java.util.concurrent.Executors;
         CategoryEntity.class,
         GroupEntity.class
     },
-    version = 1,
-    exportSchema = false
+    version = 2,
+    exportSchema = true
 )
 public abstract class AppDatabase extends RoomDatabase {
 
@@ -38,6 +38,10 @@ public abstract class AppDatabase extends RoomDatabase {
                         AppDatabase.class,
                         "telo_database"
                     )
+                    .addMigrations(
+                        DatabaseMigrations.MIGRATION_1_2,
+                        DatabaseMigrations.MIGRATION_2_3
+                    )
                     .addCallback(PREPOPULATE_CALLBACK)
                     .build();
                 }
@@ -52,8 +56,6 @@ public abstract class AppDatabase extends RoomDatabase {
             public void onCreate(@NonNull SupportSQLiteDatabase db) {
                 DB_EXECUTOR.execute(() -> {
                     CategoryDao dao = INSTANCE.categoryDao();
-
-                    // id, name, iconRes (drawable name), colorHex, sortOrder
                     dao.insert(CategoryEntity.create(
                         UUID.randomUUID().toString(),
                         "All",      "ic_category_all",      "#6200EE", 0));
