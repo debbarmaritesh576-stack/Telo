@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- HaveIBeenPwned API — k-anonymity -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">
+            api.pwnedpasswords.com
+        </domain>
+    </domain-config>
+
+    <!-- Google Drive API -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">
+            googleapis.com
+        </domain>
+    </domain-config>
+</network-security-config>
