@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- OTP Types -->
+    <string-array name="otp_types">
+        <item>TOTP (Time-based)</item>
+        <item>HOTP (Counter-based)</item>
+        <item>Steam Guard</item>
+    </string-array>
+
+    <!-- OTP Algorithms -->
+    <string-array name="otp_algorithms">
+        <item>SHA1</item>
+        <item>SHA256</item>
+        <item>SHA512</item>
+    </string-array>
+
+    <!-- OTP Digits -->
+    <string-array name="otp_digits">
+        <item>6 digits</item>
+        <item>7 digits</item>
+        <item>8 digits</item>
+    </string-array>
+
+    <!-- OTP Periods -->
+    <string-array name="otp_periods">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+    </string-array>
+
+    <!-- Lock Timeouts -->
+    <string-array name="lock_timeouts">
+        <item>Immediately</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>Never</item>
+    </string-array>
+
+    <!-- Themes -->
+    <string-array name="themes">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>AMOLED</item>
+        <item>System Default</item>
+    </string-array>
+
+    <!-- Card Types -->
+    <string-array name="card_types">
+        <item>Visa</item>
+        <item>Mastercard</item>
+        <item>Amex</item>
+        <item>RuPay</item>
+        <item>Discover</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Sort Options -->
+    <string-array name="sort_options">
+        <item>Name A-Z</item>
+        <item>Name Z-A</item>
+        <item>Newest First</item>
+        <item>Oldest First</item>
+        <item>Recently Updated</item>
+    </string-array>
+
+    <!-- Backup Frequency -->
+    <string-array name="backup_frequency">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Manual Only</item>
+    </string-array>
+
+</resources>
