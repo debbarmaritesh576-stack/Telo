@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Icon -->
+        <ImageView
+            android:id="@+id/iv_otp_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_lock"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tv_otp_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_otp_icon"
+            app:layout_constraintEnd_toStartOf="@id/btn_otp_favorite" />
+
+        <!-- Issuer -->
+        <TextView
+            android:id="@+id/tv_otp_issuer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/on_surface_variant"
+            android:layout_marginStart="12dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_otp_name"
+            app:layout_constraintStart_toEndOf="@id/iv_otp_icon"
+            app:layout_constraintEnd_toStartOf="@id/btn_otp_favorite" />
+
+        <!-- Code -->
+        <TextView
+            android:id="@+id/tv_otp_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"
+            android:textColor="@color/primary"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_otp_issuer"
+            app:layout_constraintStart_toEndOf="@id/iv_otp_icon"
+            app:layout_constraintEnd_toStartOf="@id/tv_otp_timer" />
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/tv_otp_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/on_surface_variant"
+            app:layout_constraintBottom_toBottomOf="@id/tv_otp_code"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Progress -->
+        <ProgressBar
+            android:id="@+id/progress_otp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:max="100"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_otp_code"
+            app:layout_constraintStart_toEndOf="@id/iv_otp_icon"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Favorite -->
+        <ImageButton
+            android:id="@+id/btn_otp_favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_favorite_border"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_otp_copy" />
+
+        <!-- Copy -->
+        <ImageButton
+            android:id="@+id/btn_otp_copy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_copy"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_otp_more" />
+
+        <!-- More -->
+        <ImageButton
+            android:id="@+id/btn_otp_more"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_more"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
