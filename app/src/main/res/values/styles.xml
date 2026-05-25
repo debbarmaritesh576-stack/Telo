@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Card Style -->
+    <style name="TeloCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+    </style>
+
+    <!-- Primary Button -->
+    <style name="TeloButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="TeloButton.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+    </style>
+
+    <!-- Text Input -->
+    <style name="TeloTextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_md</item>
+    </style>
+
+    <!-- Section Header -->
+    <style name="SectionHeader">
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_sm</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- OTP Code -->
+    <style name="OTPCode">
+        <item name="android:textSize">@dimen/text_otp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+</resources>
