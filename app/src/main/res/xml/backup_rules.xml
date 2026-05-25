@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude encrypted vault — user must backup manually -->
+    <exclude domain="file" path="telo_vault.enc" />
+    <exclude domain="sharedpref" path="telo_pin.xml" />
+    <exclude domain="sharedpref" path="telo_encrypted_prefs.xml" />
+    <!-- Include preferences -->
+    <include domain="sharedpref" path="telo_prefs.xml" />
+</full-backup-content>
