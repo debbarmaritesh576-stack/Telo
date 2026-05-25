@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Telo</string>
+    <string name="splash_tagline">Your secure vault</string>
+
+    <!-- Common -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="search">Search</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="done">Done</string>
+    <string name="confirm">Confirm</string>
+    <string name="close">Close</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add">Add</string>
+    <string name="generate">Generate</string>
+    <string name="loading">Loading…</string>
+
+    <!-- Auth / Unlock -->
+    <string name="unlock">Unlock</string>
+    <string name="unlock_telo">Unlock Telo</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="wrong_pin">Wrong PIN</string>
+    <string name="use_biometric">Use Biometric</string>
+    <string name="use_pin">Use PIN instead</string>
+    <string name="use_password">Use Password instead</string>
+    <string name="touch_fingerprint">Touch fingerprint sensor</string>
+    <string name="biometric_not_recognized">Not recognized. Try again</string>
+
+    <!-- Setup Vault -->
+    <string name="setup_vault">Setup Vault</string>
+    <string name="create_vault">Create Vault</string>
+    <string name="vault_password">Vault Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="password_too_short">Minimum 8 characters</string>
+    <string name="vault_created">Vault created successfully</string>
+
+    <!-- OTP -->
+    <string name="two_fa_accounts">2FA Accounts</string>
+    <string name="add_2fa">Add 2FA Account</string>
+    <string name="add_2fa_desc">TOTP, HOTP or Steam</string>
+    <string name="account_name">Account Name</string>
+    <string name="issuer">Issuer / Service</string>
+    <string name="secret_key">Secret Key</string>
+    <string name="period_seconds">Period (seconds)</string>
+    <string name="digits">Digits</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="scan_qr_hint">Point camera at QR code</string>
+    <string name="no_otp_accounts">No 2FA accounts yet\nTap + to add one</string>
+    <string name="code_copied">Code copied — clears in 30s</string>
+    <string name="otp_deleted">Account deleted</string>
+
+    <!-- Passwords -->
+    <string name="passwords">Passwords</string>
+    <string name="add_password">Add Password</string>
+    <string name="add_password_desc">Login credentials</string>
+    <string name="title">Title</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="website_url">Website URL</string>
+    <string name="notes">Notes</string>
+    <string name="generate_password">Generate Password</string>
+    <string name="no_passwords">No passwords yet\nTap + to add one</string>
+    <string name="password_copied">Password copied — clears in 30s</string>
+    <string name="username_copied">Username copied</string>
+
+    <!-- Generator -->
+    <string name="password_generator">Password Generator</string>
+    <string name="length">Length</string>
+    <string name="uppercase">Uppercase (A-Z)</string>
+    <string name="digits_label">Digits (0-9)</string>
+    <string name="symbols">Symbols (!@#$)</string>
+    <string name="exclude_ambiguous">Exclude ambiguous (I, l, 0, O)</string>
+    <string name="use_this_password">Use This Password</string>
+
+    <!-- Cards -->
+    <string name="cards">Cards</string>
+    <string name="add_card">Add Card</string>
+    <string name="cardholder_name">Cardholder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_month">MM</string>
+    <string name="expiry_year">YY</string>
+    <string name="cvv">CVV</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="card_expired">Expired</string>
+    <string name="card_number_copied">Card number copied — clears in 30s</string>
+
+    <!-- Notes -->
+    <string name="secure_notes">Secure Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_content">Write your note here…</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="security">Security</string>
+    <string name="display">Display</string>
+    <string name="backup">Backup</string>
+    <string name="about">About</string>
+    <string name="biometric_unlock">Biometric Unlock</string>
+    <string name="block_screenshots">Block Screenshots</string>
+    <string name="pin_lock">PIN Lock</string>
+    <string name="auto_lock">Auto-lock</string>
+    <string name="tap_to_reveal">Tap to Reveal OTP</string>
+    <string name="theme">Theme</string>
+    <string name="auto_backup">Auto Backup</string>
+    <string name="backup_restore">Backup &amp; Restore</string>
+    <string name="export">Export</string>
+    <string name="export_encrypted">Export Encrypted Backup</string>
+    <string name="export_plain">Export Plain Text (JSON)</string>
+    <string name="import_label">Import</string>
+    <string name="import_backup">Import Backup</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search accounts, passwords…</string>
+    <string name="no_results">No results found</string>
+
+    <!-- Add New -->
+    <string name="add_new">Add New</string>
+
+    <!-- Security Dashboard -->
+    <string name="security_dashboard">Security Dashboard</string>
+    <string name="password_health">Password Health</string>
+    <string name="weak_passwords">Weak Passwords</string>
+    <string name="duplicate_passwords">Duplicate Passwords</string>
+    <string name="expired_passwords">Expired Passwords</string>
+    <string name="breached_passwords">Breached Passwords</string>
+    <string name="security_score">Security Score</string>
+
+    <!-- Cloud Sync -->
+    <string name="cloud_sync">Cloud Sync</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="auto_sync">Auto Sync</string>
+    <string name="not_signed_in">Not signed in</string>
+
+    <!-- Errors -->
+    <string name="error_name_required">Name is required</string>
+    <string name="error_secret_required">Secret key is required</string>
+    <string name="error_invalid_secret">Invalid Base32 secret</string>
+    <string name="error_title_required">Title is required</string>
+    <string name="error_password_required">Password is required</string>
+    <string name="error_invalid_qr">Invalid QR code</string>
+    <string name="error_camera_permission">Camera permission required</string>
+    <string name="error_generic">Something went wrong</string>
+
+    <!-- Panic Wipe -->
+    <string name="panic_wipe">Emergency Wipe</string>
+    <string name="panic_wipe_confirm">WIPE EVERYTHING</string>
+    <string name="all_data_wiped">All data wiped</string>
+
+    <!-- Notifications -->
+    <string name="notif_expiry_title">Password Expiry Warning</string>
+    <string name="notif_breach_title">Data Breach Detected!</string>
+    <string name="notif_backup_title">Backup Reminder</string>
+
+</resources>
